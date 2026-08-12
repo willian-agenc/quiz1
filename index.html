@@ -13,9 +13,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="images/imagem-site-otimizada.avif" type="image/avif" fetchpriority="high">
+<link rel="preload" as="image" href="/images/imagem-site-otimizada.avif" type="image/avif" fetchpriority="high">
 <script>
-  (new Image()).src = "images/imagem-site-otimizada.avif";
+  (new Image()).src = "/images/imagem-site-otimizada.avif";
   (new Image()).src = "cta_guarantee.webp";
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -969,14 +969,15 @@ body.is-landing .stage { position: relative; z-index: 1; }
       + '<div class="hero-layout">'
       + '  <div class="hero-image-col">'
       + '    <picture>'
-      + '      <source srcset="images/imagem-site-otimizada.avif" type="image/avif">'
-      + '      <source srcset="images/imagem-site-otimizada.webp" type="image/webp">'
+      + '      <source srcset="/images/imagem-site-otimizada.avif" type="image/avif" />'
+      + '      <source srcset="/images/imagem-site-otimizada.webp" type="image/webp" />'
       + '      <img'
-      + '        src="images/imagem-site-otimizada.webp"'
+      + '        src="/images/imagem-site-otimizada.webp"'
+      + '        onerror="this.onerror=null;this.src=\'imagem-site-otimizada.webp\';"'
       + '        alt="Pessoas fazendo tarefas com celular"'
       + '        fetchpriority="high"'
       + '        decoding="async"'
-      + '      >'
+      + '      />'
       + '    </picture>'
       + '  </div>'
 
