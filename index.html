@@ -13,12 +13,10 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://i.ibb.co" crossorigin>
-<link rel="dns-prefetch" href="https://i.ibb.co">
-<link rel="preload" as="image" href="https://i.ibb.co/dsz2rqG0/people-doing-chores-with-phones-1786483589887.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="/images/imagem-site-otimizada.avif" type="image/avif" fetchpriority="high">
 <script>
-  (new Image()).src = "https://i.ibb.co/dsz2rqG0/people-doing-chores-with-phones-1786483589887.jpg";
-  (new Image()).src = "https://i.ibb.co/TxY7SJ6D/3eaec8a7-d739-4ffc-93b6-015e44fd520c.png";
+  (new Image()).src = "/images/imagem-site-otimizada.avif";
+  (new Image()).src = "/cta_guarantee.webp";
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -166,6 +164,7 @@ body.is-landing .stage { position: relative; z-index: 1; }
   .landing-sub-text strong { color: #198737; }
   .hero-layout { display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 16px; }
   .hero-image-col { flex: 1; position: relative; display: flex; justify-content: center; width: calc(100% + 48px); margin: 0 -24px;}
+  .hero-image-col picture { width: 100%; display: flex; justify-content: center; }
   .hero-image-col img { width: 100%; max-width: 115%; transform: scale(1.12); margin-top: 12px; border-radius: 16px; mask-image: linear-gradient(to bottom, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%); }
   .hero-benefits-col { display: flex; justify-content: center; align-items: center; gap: 4px; text-align: center; flex-wrap: nowrap; width: 100%; }
   .h-benefit { display: flex; align-items: center; gap: 4px; background: #F9FAFB; padding: 4px 6px; border-radius: 99px; flex: 1; justify-content: center; }
@@ -969,7 +968,16 @@ body.is-landing .stage { position: relative; z-index: 1; }
       + '</p>'
       + '<div class="hero-layout">'
       + '  <div class="hero-image-col">'
-      + '    <img src="https://i.ibb.co/dsz2rqG0/people-doing-chores-with-phones-1786483589887.jpg" alt="Pessoas fazendo tarefas com celular" fetchpriority="high" loading="eager" decoding="async">'
+      + '    <picture>'
+      + '      <source srcset="/images/imagem-site-otimizada.avif" type="image/avif">'
+      + '      <source srcset="/images/imagem-site-otimizada.webp" type="image/webp">'
+      + '      <img'
+      + '        src="/images/imagem-site-otimizada.webp"'
+      + '        alt="Imagem"'
+      + '        fetchpriority="high"'
+      + '        decoding="async"'
+      + '      >'
+      + '    </picture>'
       + '  </div>'
 
       + '</div>'
@@ -1225,7 +1233,7 @@ body.is-landing .stage { position: relative; z-index: 1; }
       + '  <span style="font-size:20px; font-weight:800; letter-spacing: -0.3px;">QUERO COMEÇAR AGORA →</span>'
       + '  <span style="font-size:13px; font-weight:700; opacity:0.95; background:rgba(0,0,0,0.18); padding:3px 14px; border-radius:99px;">Por apenas R$ 27 (Acesso Imediato)</span>'
       + '</a>'
-      + '<img id="cta-image" src="https://i.ibb.co/TxY7SJ6D/3eaec8a7-d739-4ffc-93b6-015e44fd520c.png" alt="Segurança e Garantia" style="display: none; width: 100%; max-width: 100%; margin-top: 14px; border-radius: 12px; object-fit: contain;" />';
+      + '<img id="cta-image" src="/cta_guarantee.webp" alt="Segurança e Garantia" style="display: none; width: 100%; max-width: 100%; margin-top: 14px; border-radius: 12px; object-fit: contain;" />';
   }
 
   function animateCount(){
